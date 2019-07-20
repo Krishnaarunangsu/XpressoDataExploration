@@ -19,5 +19,10 @@ cmd_1 = 'kubectl get services'
 print(check_output("echo {} | sudo -S {}".format(pwd, cmd_1), shell=True).decode())
 print('*****************************************************************************')
 
+print('Kubeflow Installation Check')
+print('***************************************')
+cmd_2 ='kubectl -n kubeflow get  all'
+print(check_output("echo {} | sudo -S {}".format(pwd, cmd_2), shell=True).decode())
+print('*****************************************************************************')
 
 
