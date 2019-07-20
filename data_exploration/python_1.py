@@ -1,5 +1,5 @@
 
-import subprocess
+from  subprocess import call
 
 print('Abzooba')
 #subprocess.call(["ls", "-l"])
@@ -8,5 +8,9 @@ print('Abzooba')
 #p = subprocess.Popen(['sudo','docker', 'ps'], stdout=subprocess.PIPE)
 #print(p.stdout)
 
-subprocess.call(['docker', 'ps'])
+# subprocess.call(['docker', 'ps'])
+pwd='abz00ba1nc'
+cmd='docker ps'
+
+call('echo {} | sudo -S {}'.format(pwd, cmd), shell=True)
 
