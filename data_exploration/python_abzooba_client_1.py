@@ -25,4 +25,16 @@ cmd_2 ='kubectl -n kubeflow get  all'
 print(check_output("echo {} | sudo -S {}".format(pwd, cmd_2), shell=True).decode())
 print('*****************************************************************************')
 
+print('Python3 Installation Check')
+print('***************************************')
+cmd_3 ='python3 --version'
+print(check_output("echo {} | sudo -S {}".format(pwd, cmd_3), shell=True).decode())
+print('*****************************************************************************')
+
+print('Git Installation Check')
+print('***************************************')
+cmd_4 ='git status'
+print(check_output("echo {} | sudo -S {}".format(pwd, cmd_4), shell=True).decode())
+print('*****************************************************************************')
+
 
