@@ -5,6 +5,6 @@ print('Abzooba')
 subprocess.call(["ls", "-l"])
 
 # p = subprocess.Popen(['docker', 'ps', '|', 'grep', 'myimagename'], stdout=subprocess.PIPE)
-p = subprocess.Popen(['docker', 'ps'], stdout=subprocess.PIPE)
-print(p.stdout)
+p = subprocess.Popen(['sudo','docker', 'ps'], stdout=subprocess.PIPE)
+#print(p.stdout)
 
