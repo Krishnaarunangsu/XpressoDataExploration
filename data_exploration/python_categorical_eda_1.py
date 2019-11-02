@@ -1,5 +1,5 @@
 # Import Libraries
-import inline as inline
+# import inline as inline
 import numpy as np
 import pandas as pd
 import seaborn as sns
@@ -16,7 +16,8 @@ warnings.filterwarnings('ignore')
 # We are using whitegrid style for our seaborn plots. This is like the most basic one
 sns.set_style(style = 'whitegrid')
 # dataset = pd.read_csv('../input/train.csv')
-dataset = pd.read_csv('../data/train.csv')
+# dataset = pd.read_csv('../data/train.csv')
+dataset = pd.read_csv('train.csv')
 print(dataset.describe())
 print(dataset.info())
 
@@ -29,7 +30,7 @@ print(dataset.head(3))
 
 
 # Create a separate dataframe which has only Categorical Variables
-ds_cat = dataset.select_dtypes(include = 'object').copy()
+ds_cat = dataset.select_dtypes(include='object').copy()
 print(ds_cat.head(2))
 
 # Basic Stats for each variable
