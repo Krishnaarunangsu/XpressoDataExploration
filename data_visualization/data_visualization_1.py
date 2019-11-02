@@ -53,3 +53,5 @@ with sns.axes_style('white'):
     sns.jointplot("x", "y", data, kind='hex')
 
 plt.show()
+
+# https://jakevdp.github.io/PythonDataScienceHandbook/04.14-visualization-with-seaborn.html
