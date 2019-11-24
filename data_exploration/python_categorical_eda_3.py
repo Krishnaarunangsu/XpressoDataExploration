@@ -79,6 +79,7 @@ print((ds_cat['MSZoning'].isnull().sum()/ nrow).round(3)*100)
 # Here again we will start with one variable (MSZoning) as we did in part 1 to build our code and then subsequently we will put everything together
 
 # 2.1 Count Plot
+sns.cou
 sns.countplot(data=ds_cat, x='MSZoning')
 plt.show()
 
